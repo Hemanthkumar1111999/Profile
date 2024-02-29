@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Myprofile.css">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="#" class="logo">ℌ𝔢𝔪𝔞𝔫𝔱𝔥 𝔎𝔲𝔪𝔞𝔯 ℜ𝔢𝔡𝔡𝔶</a>
+            <ul class="nav-links">
+              <i class="uil uil-times navCloseBtn"></i>
+              <li><a href="/">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        <div class="hi" id="Hi" style="position: static; padding:130 0;"></div>
+        <div class="LEFT_TEXT_RIGHT_IMAGE" id="Hello">
+            <div class="profile-name" id="Profile-name">
+            </div>
+            <div class="profile-pic">
+                <img src="./Images/IMG_20220817_142443_431.jpg" alt="" style="position: static; border-radius: 50%;">
+            </div>
+        </div>
+        <div class="Botton_container_box" id="Botton_container">
+            <div class="row">
+             <button class="popup_button_row_1" onclick="showPopup('popup1')">EDUCATION</button>
+             <button class="popup_button_column1" onclick="showPopup('popup2')">SKILLS</button>
+            </div>
+            <div class="row">
+             <button class="popup_button_row_2" onclick="showPopup('popup3')">EXPERIENCE</button>
+             <button class="popup_button_column2" onclick="showPopup('popup4')">LANGUAGES</button>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close" onclick="closePopup('popup1')">X</span>
+                <h2 class="POPUP_H2">EDUCATION</h2>
+                <p>I have completed ECE with 7.2 CGP in B.tech at Sree Rama Engineering College</p>
+            </div>
+              
+              
+            <div id="popup2" class="popup">
+                <span class="close" onclick="closePopup('popup2')">X</span>
+                <h2 class="POPUP_H2">Skills</h2>
+                <p>
+                    <button class="Skill_button">HTML</button>
+                    <button class="Skill_button">CSS</button>
+                    <button class="Skill_button">JAVA SCRIPT</button>
+                    <button class="Skill_button">REACT JS</button>
+                    <button class="Skill_button">CONTENTFUL</button>
+                    <button class="Skill_button">AEM</button>
+                    <button class="Skill_button">SQL</button>
+                    <button class="Skill_button">MARVEN</button>
+                    <button class="Skill_button">GIT & GIT HUB</button>
+                    <button class="Skill_button">MANUAL TESTING</button>
+                </p>
+            </div>
+              
+              
+            <div id="popup3" class="popup">
+                <span class="close" onclick="closePopup('popup3')">X</span>
+                <h2 class="POPUP_H2">EXPERIENCE</h2>
+                <p>I have 2years of experience as AEM developer and contentful related tasks. </p>
+                <p>Certified AEM developer, AEM business Practitioner and also Devops certification in simplilearn.</p>
+                <p>Experience in contentful CMS tools for creating content type and modeling and also worked with react js.</p>
+            </div>
+              
+              
+            <div id="popup4" class="popup">
+                <span class="close" onclick="closePopup('popup4')">X</span>
+                <h2 class="POPUP_H2">LANGUAGES</h2>
+                <button class="Languages_button">ENGLISH</button>
+                <button class="Languages_button">TELUGU</button>
+                <button class="Languages_button">TAMIL</button>
+            </div>
+             
+        </div>
+        
+        <div class="Thank_You" id="Thankyou"></div>
+        <script src="Myprofile.js" type="text/babel"></script>
+    </body>
+</html>

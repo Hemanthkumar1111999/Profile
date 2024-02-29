@@ -1,0 +1,369 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0faff;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  /*left: 0;*/
+  width: 100%;
+  padding: 15px 200px;
+  background: transparent;
+  display: block;
+  transition: top 0.3s;
+  filter: invert(1);
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  justify-content: space-between;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+.nav.openSearch .nav-links a {
+  opacity: 0;
+  pointer-events: none;
+}
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+  .nav .search-box {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #11101d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.nav.hide{
+    top: -50px;
+}
+
+.nav{
+    padding: 40 100;
+}
+.Hi{
+    position: fixed;
+    background-image: url(Images/127132_original_3556x2444.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center 100%;
+}
+
+.homepageh1{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 120px;
+}
+
+.homepageh2{
+    color: rgb(34, 181, 51);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 70px;
+}
+
+.Nameh1{
+    color: rgb(31, 6, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 7px rgb(123, 65, 199);
+    font-style: italic;
+    font-size: 55px;
+    font-weight: 1000;
+}
+.Namep{
+    color: rgb(1, 0, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 7px rgb(123, 65, 199);
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.LEFT_TEXT_RIGHT_IMAGE {
+    display: flex;
+    align-items: center;
+    padding: 50px 40px;
+    
+}
+.profile-pic {
+    flex: 1;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    width: 80%;
+    display: block;
+}
+.profile-pic img{
+    width: 120%;
+    height: auto;
+    padding: 20px;
+
+}
+
+
+.profile-name {
+    flex: 2;
+    padding: 20px;
+}
+.Nameh1:hover{
+    transform: scale(1.2);
+}
+.Namep:hover{
+    transform: scale(1.1);
+}
+
+
+/*popup*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 120px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+}
+
+
+.popup.active {
+    display: block;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*.Botton_container_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 200px;
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  flex: 2;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;
+  background-color: DodgerBlue;
+}*/
+
+.row{
+    display: flex;
+    
+}
+
+.popup_button_column1 {
+  background-color: blueviolet;
+  flex: 1;
+  height: 300px;
+  font-size: 60px;
+  font-weight: 1000;
+  font-style: oblique;
+}
+
+.popup_button_row_1 {
+    flex: 1;
+    height: 300px;
+    background-color: orange;
+    font-size: 60px;
+    font-weight: 1000;
+    font-style: oblique;
+}
+
+.popup_button_column2 {
+    background-color: rgb(18, 206, 100);
+    flex: 1;
+    height: 300px;
+    font-size: 60px;
+    font-weight: 1000;
+    font-style: oblique;
+}
+  
+.popup_button_row_2 {
+      flex: 1;
+      height: 300px;
+      background-color: rgb(39, 199, 239);
+      font-size: 60px;
+      font-weight: 1000;
+      font-style: oblique;
+}
+@media (max-width: 400px) {
+    .row {
+     height: 500px;
+     flex-direction: column;
+    }
+}
+
+.popup_button_row_1:hover{
+    transform: scale(1.1);
+}
+.popup_button_row_2:hover{
+    transform: scale(1.1);
+}
+.popup_button_column1:hover{
+    transform: scale(1.1);
+}
+.popup_button_column2:hover{
+    transform: scale(1.1);
+}
+
+.POPUP_H2{
+    color: rgb(31, 6, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 7px rgb(123, 65, 199);
+    font-style: italic;
+    font-size: 55px;
+    font-weight: 1000;
+}
+
+.Skill_button {
+    
+	border: 1%;
+	border-radius: 120px;
+	padding: 15px 30px;
+	font-size: 18px;
+	color: #FFFFFF;
+    background-color: rgb(64, 124, 235);
+    
+}
+
+.Skill_button:hover{
+    transform: scale(1.1);
+}
+
+.Languages_button{
+    border: 10%;
+	border-radius: 10px;
+	padding: 15px 30px;
+	font-size: 18px;
+	color: #FFFFFF;
+    background-color: rgb(64, 124, 235);
+
+}
+
+.Languages_button:hover{
+    transform: scale(1.2);
+}
+
+/*Thank-you*/
+
+.Thank_You{
+    background-color: #283350;
+    text-align: center;
+    padding: 12%;
+}
+.Thank_You_h2{
+    -webkit-text-fill-color: #FF6600;
+    text-shadow: 4px 4px 7px rgb(129, 52, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 100px;
+}
+.Thank_You_h3{
+    color: whitesmoke;
+    text-shadow: 4px 4px 7px rgb(146, 79, 232);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 100px;
+}
+.Homepage_contact_us{
+    color: green;
+}
+.Thank_You_h3:hover{
+    transform: scale(1.2);
+}
+.Thank_You_h2:hover{
+    transform: scale(1.2);
+}
