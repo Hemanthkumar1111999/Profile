@@ -45,7 +45,7 @@ function ThankYouContent() {
 }
 function ThankYouSubContent() {
     return (
-        <h3 class="Thank_You_h3">FOR MORE DETAILS <a class="Homepage_contact_us" href="/contact-us/">CONTACT US</a></h3>
+        <h3 class="Thank_You_h3">FOR MORE DETAILS <a class="Homepage_contact_us" href="/Profile/contactus.html">CONTACT US</a></h3>
     )
 }
 
